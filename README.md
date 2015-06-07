@@ -10,6 +10,11 @@ Every Process maintains internal set of loaded Modules/DLLs in the form of three
 - Load Order List
 - Memory Order List
 - Initialization Order List
+
+##Commands
+To run in console:
+- DLLHiding32.exe "Process Name" "DLL Name"
+- DLLHiding64.exe "Process Name" "DLL Name"
  
 ##Limitations
 Should effectively hide modules from all user mode applications. Application with Kernel mode access can enumerate the hidden modules such applications include Process Explorer. Additionally user mode applications can enumerate the memory of an application and based on some size analyzation determine that there maybe a hidden module. 
