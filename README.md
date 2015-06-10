@@ -17,7 +17,7 @@ To run in console:
 - DLLHiding64.exe "Process Name" "DLL Name"
  
 ##Limitations
-Should effectively hide modules from all user mode applications. Application with Kernel mode access can enumerate the hidden modules such applications include Process Explorer. Additionally user mode applications can enumerate the memory of an application and based on some size analyzation determine that there maybe a hidden module. 
+Should effectively hide modules from all user mode applications. Application with Kernel Mode Access can enumerate the hidden modules such applications include Process Explorer as the Kernel Object remains unchanged. Additionally user mode applications can enumerate the memory of an application using NtQueryVirtualMemory() and find the modules.
 
 ##Motivation
 I could not find any source code or support for x64 processes to test some internal software solutions so I developed this application. 
